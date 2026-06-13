@@ -1,4 +1,4 @@
-module github.com/urfave/cli-docs/v3
+module github.com/LumeWeb/cli-docs
 
 go 1.24.4
 
