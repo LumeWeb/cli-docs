@@ -1,0 +1,29 @@
+{
+  "name": "root",
+  "flags": [
+    {
+      "name": "--visible-flag",
+      "usage": "shown",
+      "type": "string",
+      "takesValue": true
+    },
+    {
+      "name": "--hidden-flag",
+      "usage": "not shown",
+      "type": "string",
+      "takesValue": true,
+      "hidden": true
+    }
+  ],
+  "commands": [
+    {
+      "name": "visible-cmd",
+      "usage": "shown"
+    },
+    {
+      "name": "hidden-cmd",
+      "usage": "not shown",
+      "hidden": true
+    }
+  ]
+}
