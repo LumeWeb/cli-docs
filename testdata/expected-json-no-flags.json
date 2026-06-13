@@ -1,0 +1,148 @@
+{
+  "name": "greet",
+  "usage": "Some app",
+  "usageText": [
+    "app [first_arg] [second_arg]"
+  ],
+  "description": "Description of the application",
+  "commands": [
+    {
+      "name": "config",
+      "aliases": [
+        "c"
+      ],
+      "usage": "another usage test",
+      "flags": [
+        {
+          "name": "--flag",
+          "aliases": [
+            "--fl",
+            "-f"
+          ],
+          "type": "string",
+          "takesValue": true
+        },
+        {
+          "name": "--another-flag",
+          "aliases": [
+            "-b"
+          ],
+          "usage": "another usage text",
+          "type": "bool",
+          "default": "false",
+          "takesValue": false
+        }
+      ],
+      "commands": [
+        {
+          "name": "sub-config",
+          "aliases": [
+            "s",
+            "ss"
+          ],
+          "usage": "another usage test",
+          "flags": [
+            {
+              "name": "--sub-flag",
+              "aliases": [
+                "--sub-fl",
+                "-s"
+              ],
+              "type": "string",
+              "takesValue": true
+            },
+            {
+              "name": "--sub-command-flag",
+              "aliases": [
+                "-s"
+              ],
+              "usage": "some usage text",
+              "type": "bool",
+              "default": "false",
+              "takesValue": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "info",
+      "aliases": [
+        "i",
+        "in"
+      ],
+      "usage": "retrieve generic information"
+    },
+    {
+      "name": "some-command"
+    },
+    {
+      "name": "hidden-command",
+      "hidden": true
+    },
+    {
+      "name": "usage",
+      "aliases": [
+        "u"
+      ],
+      "usage": "standard usage text",
+      "usageText": [
+        "Usage for the usage text",
+        "- formatted:  Based on the specified ConfigMap and summon secrets.yml",
+        "- list:       Inspect the environment for a specific process running on a Pod",
+        "- for_effect: Compare 'namespace' environment with 'local'",
+        "",
+        "```",
+        "func() { ... }",
+        "```",
+        "",
+        "Should be a part of the same code block"
+      ],
+      "flags": [
+        {
+          "name": "--flag",
+          "aliases": [
+            "--fl",
+            "-f"
+          ],
+          "type": "string",
+          "takesValue": true
+        },
+        {
+          "name": "--another-flag",
+          "aliases": [
+            "-b"
+          ],
+          "usage": "another usage text",
+          "type": "bool",
+          "default": "false",
+          "takesValue": false
+        }
+      ],
+      "commands": [
+        {
+          "name": "sub-usage",
+          "aliases": [
+            "su"
+          ],
+          "usage": "standard usage text",
+          "usageText": [
+            "Single line of UsageText"
+          ],
+          "flags": [
+            {
+              "name": "--sub-command-flag",
+              "aliases": [
+                "-s"
+              ],
+              "usage": "some usage text",
+              "type": "bool",
+              "default": "false",
+              "takesValue": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

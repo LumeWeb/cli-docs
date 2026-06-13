@@ -1,0 +1,55 @@
+{
+  "name": "greet",
+  "usage": "Some app",
+  "usageText": [
+    "app [first_arg] [second_arg]"
+  ],
+  "description": "Description of the application",
+  "flags": [
+    {
+      "name": "--socket",
+      "aliases": [
+        "-s"
+      ],
+      "usage": "some 'usage' text",
+      "type": "string",
+      "default": "value",
+      "takesValue": true
+    },
+    {
+      "name": "--flag",
+      "aliases": [
+        "--fl",
+        "-f"
+      ],
+      "type": "string",
+      "takesValue": true
+    },
+    {
+      "name": "--another-flag",
+      "aliases": [
+        "-b"
+      ],
+      "usage": "another usage text",
+      "type": "bool",
+      "default": "false",
+      "takesValue": false,
+      "envVars": [
+        "EXAMPLE_VARIABLE_NAME"
+      ]
+    },
+    {
+      "name": "--hidden-flag",
+      "type": "bool",
+      "default": "false",
+      "takesValue": false,
+      "hidden": true
+    },
+    {
+      "name": "--temp-dir",
+      "type": "string",
+      "default": "test temp dir",
+      "takesValue": true
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "name": "main",
+  "flags": [
+    {
+      "name": "--bool-false",
+      "type": "bool",
+      "default": "false",
+      "takesValue": false
+    },
+    {
+      "name": "--bool-true",
+      "type": "bool",
+      "default": "true",
+      "takesValue": false
+    },
+    {
+      "name": "--string-empty",
+      "type": "string",
+      "takesValue": true
+    },
+    {
+      "name": "--string-set",
+      "type": "string",
+      "default": "a string",
+      "takesValue": true
+    },
+    {
+      "name": "--string-map-empty",
+      "type": "string=string",
+      "takesValue": true
+    },
+    {
+      "name": "--string-map-set",
+      "type": "string=string",
+      "default": "a=\"b\"",
+      "takesValue": true
+    },
+    {
+      "name": "--string-slice-empty",
+      "type": "string",
+      "takesValue": true
+    },
+    {
+      "name": "--string-slice-set",
+      "type": "string",
+      "default": "\"a\", \"b\"",
+      "takesValue": true
+    },
+    {
+      "name": "--int-empty",
+      "type": "int",
+      "default": "0",
+      "takesValue": true
+    },
+    {
+      "name": "--int-set",
+      "type": "int",
+      "default": "42",
+      "takesValue": true
+    },
+    {
+      "name": "--uint-empty",
+      "type": "uint",
+      "default": "0",
+      "takesValue": true
+    },
+    {
+      "name": "--uint-set",
+      "type": "uint",
+      "default": "21",
+      "takesValue": true
+    },
+    {
+      "name": "--float-empty",
+      "type": "float",
+      "default": "0",
+      "takesValue": true
+    },
+    {
+      "name": "--float-set",
+      "type": "float",
+      "default": "88.32",
+      "takesValue": true
+    },
+    {
+      "name": "--duration-empty",
+      "type": "duration",
+      "default": "0s",
+      "takesValue": true
+    },
+    {
+      "name": "--duration-set",
+      "type": "duration",
+      "default": "12m0s",
+      "takesValue": true
+    },
+    {
+      "name": "--timestamp-empty",
+      "type": "time",
+      "takesValue": true
+    },
+    {
+      "name": "--timestamp-set",
+      "type": "time",
+      "default": "2024-10-20 20:40:00 +0000 UTC",
+      "takesValue": true
+    }
+  ]
+}
